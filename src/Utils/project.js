@@ -3,6 +3,10 @@ import bg2 from "../assets/Luxury-vehicle-display-garages-1200x750.jpg";
 import bg3 from "../assets/chat.avif"
 import bg4 from "../assets/weather.jpg"
 import bg5 from "../assets/portfolio.png"
+import bg5_1 from "../assets/portfolio-contact.png"
+import bg5_2 from "../assets/portfolio-project.png"
+import bg5_3 from "../assets/portfolio-work.png"
+
 import image2 from "../assets/5542924.jpg";
 import image3 from "../assets/6492518.jpg";
 import image4 from "../assets/9403184.jpg";
@@ -133,7 +137,7 @@ const projects = [
         ["Highlight skills", "Demonstrate my proficiency in web development through various technologies."],
         ["Enhance user experience", "Create a visually appealing and user-friendly interface that engages visitors."]
       ],
-      images: [`${bg1}`, `${image2}`, `${image3}`]
+      images: [`${bg5_1}`, `${bg5_2}`, `${bg5_3}`]
     }
     
   ];
