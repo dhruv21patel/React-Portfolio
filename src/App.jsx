@@ -10,23 +10,23 @@ import Routes from "./Routes/Routesall";
 import ScrollToTop from "./Routes/ScrollToTop";
 
 function App() {
-  const [resize, setResize] = useState(true);
+  // const [resize, setResize] = useState(true);
 
-  useEffect(() => {
-    function handleresize(width) {
-      if (width <= 1000) {
-        window.location.reload();
-        setResize(() => !resize);
-      }
-    }
+  // useEffect(() => {
+  //   function handleresize(width) {
+  //     if (width <= 1000) {
+  //       window.location.reload();
+  //       setResize(() => !resize);
+  //     }
+  //   }
 
-    window.addEventListener("resize", () => handleresize(window.innerWidth));
-    return () => {
-      window.removeEventListener("resize", () =>
-        handleresize(window.innerWidth)
-      );
-    };
-  }, [resize]);
+  //   window.addEventListener("resize", () => handleresize(window.innerWidth));
+  //   return () => {
+  //     window.removeEventListener("resize", () =>
+  //       handleresize(window.innerWidth)
+  //     );
+  //   };
+  // }, [resize]);
 
   // const circle =  document.getElementsByClassName('circle');
 
