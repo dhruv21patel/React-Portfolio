@@ -12,14 +12,14 @@ export default function About(){
     return <div id='about'  className="static bg-transparent h-[90dvh] md:h-auto w-full flex justify-around flex-col ">
 
                     {/* photo container that has full width */}
-                    <div id='photocontainer' className=" w-full h-fit z-0 flex justify-end items-center overflow-hidden  px-[2px] md:px-[20%]">
+                    <div id='photocontainer' className=" w-full h-fit z-0 flex justify-end items-center overflow-hidden px-[2px] md:px-[20%]">
 
 
-                        <div className=' relative h-[500px] w-[500px] sm:w-[500px] sm:h-[500px] md:w-[700px] md:h-[700px] overflow-hidden flex justify-center items-center'>
+                        <div className=' relative w-[500px] sm:w-[500px]  md:w-[700px] aspect-square overflow-hidden flex justify-center items-center'>
                             
                 
                             {/* Profile Photo */}
-                            <div className='rounded-full overflow-hidden  h-[80%] w-[80%] flex justify-center items-center p-[20px] '>
+                            <div className='rounded-full overflow-hidden aspect-square w-[80%] flex justify-center items-center p-[20px] '>
                                 <div className='rounded-full w-full h-full overflow-hidden flex justify-center items-center '>
                                      <motion.img
                                         src={profile}
@@ -45,7 +45,7 @@ export default function About(){
                              <motion.img
                                 src={blob}
                                 alt='blob'
-                                className=' absolute z-20 h-[95%] w-[95%] lg:h-[100%] lg:w-[100%] bg-black object-contain'
+                                className=' absolute z-20 h-[95%] w-[95%] aspect-square lg:h-[100%] lg:w-[100%] bg-black object-contain'
                                 initial={{
                                     opacity: 0,
                                     scale: 0,

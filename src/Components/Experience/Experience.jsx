@@ -27,7 +27,7 @@ export default function Experience(){
     }
   
   return (
-    <div id="work" className="flex flex-col gap-[40px] w-full h-fit px-[0.5rem] scale-75 md:scale-100">
+    <div id="work" className="flex flex-col gap-[40px] w-full h-fit px-[0.5rem] scale-95 md:scale-100">
         <motion.div className="w-full flex items-center my-[5%]"
             variants={customanimatedvariants}
             initial={customanimatedvariants.initial}
