@@ -17,7 +17,7 @@ export default function Experience(){
         animate:{
             opacity:1,
             x:0,
-            scale:1.5,
+            scale:1,
             transition :{
                 delay:0.2,
                 scale:{delay:0.4}
@@ -27,13 +27,13 @@ export default function Experience(){
     }
   
   return (
-    <div id="work" className="flex flex-col gap-[40px] w-full h-fit px-[0.5rem] ">
+    <div id="work" className="flex flex-col gap-[40px] w-full h-fit px-[0.5rem] scale-75 md:scale-100">
         <motion.div className="w-full flex items-center my-[5%]"
             variants={customanimatedvariants}
             initial={customanimatedvariants.initial}
             whileInView={customanimatedvariants.animate}
         >
-            <p className="md:text-[6rem] text-[2rem] text-white">Experience</p>
+            <p className="md:text-[6rem] text-[4rem] text-white w-full">Experience</p>
         </motion.div>
         <VerticalTimeline lineColor="grey">
             {
@@ -41,7 +41,7 @@ export default function Experience(){
                     return (
                         <VerticalTimelineElement key={idx}
                         className="text-wrap"
-                        contentStyle={{background:"#DBD7D2",color:"black",maxWidth:'90%',borderRadius:'10px',padding:"20px", boxShadow:"none", borderBottom:`4px solid ${exp["b-color"]}`}}
+                        contentStyle={{background:"#DBD7D2",color:"black",maxWidth:'90%',borderRadius:'10px',padding:"auto", boxShadow:"none", borderBottom:`4px solid ${exp["b-color"]}`}}
                         contentArrowStyle={{borderRight:"10px solid yellow"}}
                         icon={
                             <div className="w-full h-full flex items-center justify-center overflow-clip p-[10px]">

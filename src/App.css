@@ -7,7 +7,7 @@
   text-align: center;
   box-shadow: none;
   overflow-y:auto ;
-  overflow-x: hidden;
+  /* overflow-x: hidden; */
   width:screen;
   color:white;
   height: auto;
