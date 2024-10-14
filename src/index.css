@@ -1,0 +1,48 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+@tailwind variants;
+
+:root {
+  font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
+  line-height: 1.5;
+  font-weight: 400;
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  /* Titillium Web - ExtraLight */
+  --primary: "Titillium Web", sans-serif;
+
+  /* Open Sans - Generic */
+  --secondary: "Open Sans", sans-serif;
+
+  /* Oswald - Generic */
+  --Oswald: "Oswald", sans-serif;
+
+  --para:"Nunito Sans", sans-serif;
+
+  --handwritten:"Pacifico", cursive;
+  
+  --handwritten2:"Great Vibes", cursive;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0px;
+  padding: 0px;
+  scrollbar-color: grey transparent;
+  scrollbar-width: 10px;
+  scroll-behavior: smooth;
+  width: 100%;
+  height: 100%;
+  font-family: var(--primary);
+}
+
+body {
+  background-color: black;
+  animation: all 1s ease forwards;
+  overflow-y: scroll;
+  position: relative;
+  height: auto;
+}

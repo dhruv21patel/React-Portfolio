@@ -1,0 +1,16 @@
+#root {
+  box-sizing: border-box;
+  padding: 0px;
+  margin: 0px;
+  max-width: 100vw;
+  max-height: 100%;
+  text-align: center;
+  box-shadow: none;
+  overflow-y:auto ;
+  overflow-x: hidden;
+  width:screen;
+  color:white;
+  height: auto;
+
+}
+

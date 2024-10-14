@@ -1,0 +1,45 @@
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&display=swap');
+
+.pastinfo p{
+
+    font-family: "Oswald", sans-serif;
+    font-weight: 200;
+    font-style: normal;
+}
+
+.pastinfo p b{
+
+    font-family: "Oswald", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 1.2em;
+    width: fit-content; 
+    height: fit-content ;
+}
+
+#terms{
+    overflow: hidden;
+    justify-content: center;
+    max-height: 500px;
+    color: rgb(112, 109, 109);
+    box-shadow: rgba(0, 0, 0, 0.35) 0px -50px 36px -28px inset;
+}
+
+#terms  h3{
+    font-size: 30px;
+    transition: font-size 0.3s ease ;
+    color: gray;
+}
+
+h3:hover{
+    color: white;
+}
+
+
+.light{
+    position: absolute;
+    top: 0;
+    left: 0;
+    background: radial-gradient(circle at 50% 50%, transparent 30%,black 80%);
+}
+

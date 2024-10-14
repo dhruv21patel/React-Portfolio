@@ -1,0 +1,66 @@
+
+nav{
+    animation: slidedown 1s ease 0.5s both;
+}
+
+
+@keyframes slidedown {
+    from{
+        transform:translateY(-200px);
+    }
+
+    to{
+        transform: translateY(0px);
+    }
+    
+}
+
+#menu img{
+    background: transparent;
+    mix-blend-mode:screen;
+    color: white;
+}
+
+#menu div{
+    backdrop-filter: blur(10%);
+}
+
+.rotate{
+    animation: slider 1s ease 0s both;
+}
+
+@keyframes slider {
+    0%{
+        transform: rotate(90deg);
+        opacity: 1;
+    }
+    20%{
+        transform: rotate(120deg);
+        opacity: 0;
+    }
+
+    50%{
+        transform: rotate(240deg);
+        opacity: 0;
+    }
+    100%{
+        transform: rotate(360deg);
+        opacity: 1;
+    }
+    
+}
+
+#slider ul{
+    animation: slidermenu 1s ease 0s 1 forwards;
+}
+
+@keyframes slidermenu {
+    from{
+        transform: translateY(-100px);
+    }
+    to{
+        transform: translateY(0%);
+    }
+    
+}
+
