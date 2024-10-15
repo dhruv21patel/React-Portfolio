@@ -47,7 +47,7 @@ export default function Links({ setfunction, linkactive, devicesmall ,sliderisop
               } hover:text-slate-300
                             transition ease-linear delay-150 z-[30] w-fit`}
             >
-              <Link to={`${link.link}`} className="  w-full h-full p-2 z-[40]">
+              <Link to={`${link.link}`} className="  w-full h-full p-1 z-[40]">
                 {link.Title}
               </Link>
             </li>
@@ -70,7 +70,7 @@ export default function Links({ setfunction, linkactive, devicesmall ,sliderisop
     </ul>
   ) : (
     <ul
-      className=" text-white md:flex hidden flex-row xl:gap-x-[4rem] gap-x-2 justify-around w-fit h-fit items-center text-xl"
+      className=" text-white md:flex hidden flex-row xl:gap-x-[4rem] gap-x-4 justify-around w-fit h-fit items-center text-xl"
       onClick={(event) =>
         setfunction(event.target.closest("li").getAttribute("data-key"))
       }

@@ -55,7 +55,7 @@ export default function Navigation({ load }) {
     >
       <nav
         id="nav"
-        className="relative flex flex-row  w-full h-fit justify-between px-[2rem] md:px-[4rem] items-center z-50 "
+        className="relative flex flex-row  w-full h-fit justify-between px-[2rem] lg:px-[4rem] items-center z-50 "
       >
         <div className="relative pr-4 md:pd-0 w-fit h-fit z-50">
           <motion.div
@@ -92,7 +92,9 @@ export default function Navigation({ load }) {
           </motion.div>
         </div>
 
+              
         {!slider ? (
+          
           <Links
             setfunction={setActive}
             linkactive={Active}
