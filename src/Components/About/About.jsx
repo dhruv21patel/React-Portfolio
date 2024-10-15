@@ -15,7 +15,7 @@ export default function About(){
                     <div id='photocontainer' className=" w-full h-fit z-0 flex justify-end items-center overflow-hidden px-[2px] md:px-[20%]">
 
 
-                        <div className=' relative w-[500px] sm:w-[500px]  md:w-[700px] aspect-square overflow-hidden flex justify-center items-center'>
+                        <div className=' relative w-[70dvh] aspect-square overflow-hidden flex justify-center items-center'>
                             
                 
                             {/* Profile Photo */}
