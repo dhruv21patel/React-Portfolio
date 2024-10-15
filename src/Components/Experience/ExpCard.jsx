@@ -9,7 +9,7 @@ export default function ExpCard({ role, company, info, tech }) {
       ))}
       </div>
       <h2>Technologies</h2>
-      <ul className="list-none pl-5 mt-4 flex flex-wrap items-center justify-around gap-[1rem]">
+      <ul className="list-none pl-5 mt-4 flex flex-wrap items-center justify-evenly gap-[1rem]">
         {tech.map((point, index) => (
           <li key={`point-${index}`} className="w-fit h-fit text-gray-700 flex justify-center items-center">
             <span>{point}</span>

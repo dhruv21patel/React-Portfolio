@@ -33,7 +33,7 @@ export default function Contactus(params) {
       id="contact"
       className="w-full h-screen flex flex-col lg:flex-row "
     >
-      <div className="w-full md:w-full lg:w-[50%] px-[5%] lg:border-r-2 border-white text-white flex items-center ">
+      <div className="w-full md:w-full lg:w-[50%] px-[5%]  text-white flex items-center ">
         <div className="h-fit w-fit">
           <p
             className="text-wrap text-[1.5em] md:text-[3rem]"
