@@ -7,7 +7,7 @@ import Projects from "../Projects/Projects";
 
 export default function Frontpage(params) {
   return (
-    <div className="flex flex-col gap-[5%] md:gap-[20%] h-full w-full justify-between">
+    <div className="flex flex-col gap-[5%] lg:gap-[20%] h-auto w-full justify-between">
       <About />
       <Intro />
       <Experience />
