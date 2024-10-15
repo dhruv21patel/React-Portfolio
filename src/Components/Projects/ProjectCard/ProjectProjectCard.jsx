@@ -42,7 +42,7 @@ export default function ProjectProjectCard() {
         <div className="container flex flex-col gap-[1rem]">
           <h1 className="text-[4rem]">OVERVIEW</h1>
           <p
-            className="text-[1.5rem]"
+            className="text-[1.5rem] px-[4%]"
             style={{ fontFamily: "var(--para)", fontWeight: "200" }}
           >
             {current_project.infromation}
@@ -52,18 +52,18 @@ export default function ProjectProjectCard() {
 
       <div className="container flex items-center justify-center">
         <div className="container flex flex-col gap-[2rem] justify-center items-center">
-          <div className="container border-b-2 border-b-white w-[100%] text-start p-[3rem] flex flex-col md:flex-row justify-between">
+          <div className="container lg:border-b-2 lg:border-b-white w-[100%] text-start p-[3rem] flex flex-col md:flex-row justify-between">
             <h1 className="text-[2.5rem]">Technologies</h1>
             <ul
               className="text-[2rem]"
               style={{ fontFamily: "var(--primary)" }}
             >
               {current_project.Technologies.map((tech) => (
-                <li>{tech}</li>
+                <li className="text-[1rem]">{tech}</li>
               ))}
             </ul>
           </div>
-          <div className="container border-b-2 border-b-white w-[100%] text-start p-[3rem] flex flex-col md:flex-row justify-between">
+          <div className="container lg:border-b-2 lg:border-b-white w-[100%] text-start p-[3rem] flex flex-col md:flex-row justify-between">
             <h1 className="text-[2rem]">GOAL</h1>
             <ul
               className="text-[2rem] gap-[1rem]"
@@ -72,8 +72,8 @@ export default function ProjectProjectCard() {
               {current_project.Goals.map((goal) => (
                 <li key={goal[0]}>
                   {/* Add a unique key for each item */}
-                  <p className="font-bold">{goal[0]}</p>
-                  <p className="font-light">{goal[1]}</p>
+                  <p className="font-bold text-[1rem]">{goal[0]}</p>
+                  <p className="font-light text-[1rem]">{goal[1]}</p>
                 </li>
               ))}
             </ul>
