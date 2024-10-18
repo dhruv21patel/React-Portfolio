@@ -25,7 +25,7 @@ let exper = [
     "b-color": "blue",
   },
   {
-    date: "June 2022 - dec 2022",
+    date: "Dec 2020 - Dec 2021",
     company: "Unnati Informatics LLP",
     role: "Software Engineer - QA Tester",
     description: [
