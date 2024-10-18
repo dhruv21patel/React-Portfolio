@@ -1,30 +1,7 @@
+import Unnati from "../assets/Unnatilogo.jpeg";
 let exper = [
   {
-    date: "June 2022 - dec 2022",
-    company: "Google",
-    role: "Full Stack Developer",
-    description: [
-      "Developed scalable web applications using React, Node.js, and MongoDB.",
-      "Collaborated with cross-functional teams to implement cloud-based microservices using AWS.",
-      "Enhanced system performance by optimizing RESTful APIs, reducing latency by 25%.",
-    ],
-    logo: "https://upload.wikimedia.org/wikipedia/commons/2/2f/Google_2015_logo.svg",
-    Technologies: [
-      "Python",
-      "Django",
-      "Django Channels",
-      "Apache Kafka",
-      "PostgreSQL",
-      "REST APIs",
-      "Docker",
-      "Git",
-      "Celery",
-      "Redis",
-    ],
-    "b-color": "white",
-  },
-  {
-    date: "Jan 202 - April 2022",
+    date: "Jan 2022 - April 2022",
     company: "SilwerWings Technologies Pvt Ltd",
     role: "Software Engineer intern",
     description: [
@@ -46,6 +23,30 @@ let exper = [
     ],
     logo: "https://upload.wikimedia.org/wikipedia/commons/5/51/Facebook_f_logo_%282019%29.svg",
     "b-color": "blue",
+  },
+  {
+    date: "June 2022 - dec 2022",
+    company: "Unnati Informatics LLP",
+    role: "Software Engineering - QA Tester",
+    description: [
+      "Conducted comprehensive testing of web applications developed with React, Node.js, and MongoDB to ensure functionality and performance.",
+      "Collaborated with cross-functional teams to validate cloud-based microservices implemented on AWS, ensuring quality and compliance with requirements.",
+      "Improved system reliability by optimizing test cases for RESTful APIs, leading to a 25% reduction in identified latency issues.",
+    ],
+    logo: `${Unnati}`,
+    Technologies: [
+      "Java",
+      "JUnit",
+      "Mockito",
+      "Selenium",
+      "Postman",
+      "Git",
+      "Docker",
+      "REST APIs",
+      "TestNG",
+      "JIRA",
+    ],
+    "b-color": "white",
   },
   {
     date: "January 2021 - dec 2021",
