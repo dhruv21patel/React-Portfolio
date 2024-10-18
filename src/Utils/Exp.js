@@ -27,7 +27,7 @@ let exper = [
   {
     date: "June 2022 - dec 2022",
     company: "Unnati Informatics LLP",
-    role: "Software Engineering - QA Tester",
+    role: "Software Engineer - QA Tester",
     description: [
       "Conducted comprehensive testing of web applications developed with React, Node.js, and MongoDB to ensure functionality and performance.",
       "Collaborated with cross-functional teams to validate cloud-based microservices implemented on AWS, ensuring quality and compliance with requirements.",
@@ -46,7 +46,7 @@ let exper = [
       "TestNG",
       "JIRA",
     ],
-    "b-color": "white",
+    "b-color": "green",
   },
   {
     date: "January 2021 - dec 2021",
