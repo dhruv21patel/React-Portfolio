@@ -54,7 +54,7 @@ export default function Projects(params) {
     
     const [hovered,setIsHovered] = useState(false);
     const [hoveredindex,setHoveredindex] = useState(null);
-    return <div className="w-full h-full flex flex-col justify-start items-start mt-[15%] md:mb-[10%]">
+    return <div className="w-full h-full flex flex-col items-start justify-center">
         <div className="text-white text-[3rem] md:text-[100px] w-full h-fit text-left pl-[4vw] ">
             <div className="flex">
                 {

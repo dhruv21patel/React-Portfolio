@@ -79,8 +79,12 @@ function App() {
       <BrowserRouter>
         <ScrollToTop />
         {/* <ScrollRestoration/> */}
-        <Navigation />
-        <Routes />
+        <div className="h-screen flex flex-col">
+          <Navigation />
+          <div className="flex-grow h-fit ">
+            <Routes />
+          </div>
+        </div>
       </BrowserRouter>
     </>
   );

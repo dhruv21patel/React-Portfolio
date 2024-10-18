@@ -41,7 +41,7 @@ export default function Intro() {
 
   return (
     <motion.div
-      className="static text-white h-fit flex flex-col justify-end"
+      className=" text-white h-full flex flex-col flex-grow"
       // variants={introanimation}
       // initial={"initial"}
       // whileInView={setanimatedornot?{
@@ -56,10 +56,12 @@ export default function Intro() {
         opacity: opacity,
       }}
     >
-      <div className="relative top-0 h-fit left-[50%] translate-x-[-50%] w-fit flex flex-col gap-[40px] px-[5%] lg:px-[15%] py-[10%]">
+      <div className="relative h-full w-full flex flex-col p-[1.5rem] lg:px-[4rem] gap-auto justify-center items-center">
+
         <div className="past h-fit">
           <h1 className="text-[2rem] md:text-[5em]">Find out More!</h1>
         </div>
+
         <div className="pastinfo h-fit">
           <p className=" text-[1.5rem] md:text-[2em] text-wrap indent-[20%]">
             "As a master's student in Computer Science at{" "}
@@ -77,9 +79,11 @@ export default function Intro() {
             amazing together!"
           </p>
         </div>
-        <div>
+
+        <div className="scale-75 lg:scale-100 h-fit">
           <Animation />
         </div>
+
       </div>
     </motion.div>
   );

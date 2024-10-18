@@ -27,21 +27,24 @@ export default function Experience(){
     }
   
   return (
-    <div id="work" className="flex flex-col gap-[40px] w-full h-fit px-[0.5rem] scale-95 md:scale-100">
-        <motion.div className="w-full flex items-center my-[5%]"
+    <div id="work" className="flex flex-col gap-[4rem] w-full h-auto px-[0.5rem] scale-75 lg:scale-90 ">
+        
+        <motion.div className="w-full flex items-center "
             variants={customanimatedvariants}
             initial={customanimatedvariants.initial}
-            whileInView={customanimatedvariants.animate}
-        >
+            whileInView={customanimatedvariants.animate}>
+
             <p className="md:text-[6rem] text-[4rem] text-white w-full">Experience</p>
+
         </motion.div>
-        <VerticalTimeline lineColor="grey">
+
+        <VerticalTimeline lineColor="grey" className="w-full py-[2rem]">
             {
                 exper.map((exp,idx)=>{
                     return (
                         <VerticalTimelineElement key={idx}
                         className="text-wrap"
-                        contentStyle={{background:"#DBD7D2",color:"black",maxWidth:'90%',borderRadius:'10px',padding:"auto", boxShadow:"none", borderBottom:`4px solid ${exp["b-color"]}`}}
+                        contentStyle={{background:"#DBD7D2",color:"black",borderRadius:'10px',padding:"auto", boxShadow:"none", borderBottom:`4px solid ${exp["b-color"]}`}}
                         contentArrowStyle={{borderRight:"10px solid yellow"}}
                         icon={
                             <div className="w-full h-full flex items-center justify-center overflow-clip p-[10px]">

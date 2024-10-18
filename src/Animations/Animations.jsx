@@ -89,7 +89,7 @@ export default function Animation(){
 
 
 
-    return<div className="cf-container mt-5 ">
+    return<div className="cf-container ">
 
                 <div className="cf-flame-container"  id="fireNodes1">
                     <div className = "cf-flame"></div>
