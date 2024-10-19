@@ -36,7 +36,7 @@ export default function Contactus(params) {
       <div className="w-full h-fit md:h-full lg:w-[50%] px-[5%]  text-white flex items-center ">
         <div className="h-fit w-fit">
           <p
-            className="text-wrap text-[.5rem] sm:text-[1.5rem] md:text-[3rem]"
+            className="text-wrap  text-[1.5rem] md:text-[3rem]"
             style={{ fontFamily: "var(--handwritten2)" }}
           >
             {/* "This emphasizes the importance of problem-solving and understanding
@@ -55,13 +55,13 @@ export default function Contactus(params) {
             onSubmit={handleSubmit(onSubmit)}
             className=" w-[80%] h-auto p-2 py-4 md:p-8 flex flex-col items-center shadow gap-[1rem]"
           >
-            <div className=" text-white text-[.5rem] lg:text-[1.5rem] w-full">
+            <div className=" text-white  w-full">
               <input
                 placeholder="NAME"
                 id="name"
                 type="text"
                 {...register("name", { required: "Name is required" })}
-                className={`bg-transparent border-b border-white text-white placeholder-opacity-70 text-[.5rem] lg:text-[1.5rem] focus:outline-none focus:border-b focus:border-white  w-full p-2 ${
+                className={`bg-transparent border-b border-white text-white placeholder-opacity-70  focus:outline-none focus:border-b focus:border-white  w-full p-2 ${
                   errors.name ? "border-red-500" : ""
                 }`}
               />
@@ -70,11 +70,11 @@ export default function Contactus(params) {
               )}
             </div>
 
-            <div className="  text-white text-[.5rem] lg:text-[1.5rem] w-full">
+            <div className="  text-white  w-full">
               <input
                 placeholder={
                   errors.email ? (
-                    <p className="text-red-500 text-[.5rem] lg:text-[1.5rem]">{errors.email.message}</p>
+                    <p className="text-red-500 ">{errors.email.message}</p>
                   ) : (
                     "EMAIL"
                   )
@@ -82,18 +82,18 @@ export default function Contactus(params) {
                 id="email"
                 type="email"
                 {...register("email", { required: "Email is required" })}
-                className={`bg-transparent border-b border-white text-white placeholder-opacity-70 text-[.5rem] lg:text-[1.5rem] focus:outline-none focus:border-b focus:border-white  w-full p-2 ${
+                className={`bg-transparent border-b border-white text-white placeholder-opacity-70  focus:outline-none focus:border-b focus:border-white  w-full p-2 ${
                   errors.email ? "border-red-500" : ""
                 }`}
               />
             </div>
 
-            <div className="  text-white text-[.5rem] lg:text-[1.5rem] w-full">
+            <div className="  text-white  w-full">
               <select
                 placeholder="What do you want to Know"
                 id="subject"
                 {...register("subject", { required: "Subject is required" })}
-                className={`bg-transparent border-b border-white text-white placeholder-opacity-70 text-[.5rem] lg:text-[1.5rem] focus:outline-none focus:border-b focus:border-white  w-full p-2 ${
+                className={`bg-transparent border-b border-white text-white placeholder-opacity-70  focus:outline-none focus:border-b focus:border-white  w-full p-2 ${
                   errors.subject ? "border-red-500" : ""
                 }`}
               >
@@ -118,19 +118,19 @@ export default function Contactus(params) {
               )}
             </div>
 
-            <div className="  text-white text-[.5rem] lg:text-[1.5rem] w-full">
+            <div className="  text-white  w-full">
               <textarea
                 placeholder="Define in Few Words"
                 id="message"
                 {...register("message")}
-                className="bg-transparent border-b border-white text-white placeholder-opacity-70 text-[.5rem] lg:text-[1.5rem] focus:outline-none  w-full p-2"
+                className="bg-transparent border-b border-white text-white placeholder-opacity-70  focus:outline-none  w-full p-2"
                 rows="4"
               />
             </div>
 
             <button
               type="submit"
-              className="bg-blue-500 text-white py-2 px-4 rounded hover:bg-blue-600 text-[.5rem] lg:text-[1.5rem] w-fit"
+              className="bg-blue-500 text-white py-2 px-4 rounded hover:bg-blue-600  w-fit"
             >
               Submit
             </button>
