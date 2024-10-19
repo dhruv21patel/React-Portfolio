@@ -31,7 +31,7 @@ export default function Contactus(params) {
   return (
     <div
       id="contact"
-      className="w-full h-full flex flex-col flex-grow justify-around items-center lg:flex-row  md:mt-0"
+      className="w-full h-full flex flex-col flex-grow justify-around items-center lg:flex-row py-[2vh]"
     >
       <div className="w-full h-fit md:h-full lg:w-[50%] px-[5%]  text-white flex items-center ">
         <div className="h-fit w-fit">

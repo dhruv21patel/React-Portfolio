@@ -27,7 +27,7 @@ export default function Experience(){
     }
   
   return (
-    <div id="work" className="flex flex-col gap-[4rem] w-full h-auto px-[0.5rem] scale-75 lg:scale-90 ">
+    <div id="work" className="flex flex-col gap-[4rem] w-full h-auto px-[0.5rem] ">
         
         <motion.div className="w-full flex items-center "
             variants={customanimatedvariants}
@@ -43,8 +43,8 @@ export default function Experience(){
                 exper.map((exp,idx)=>{
                     return (
                         <VerticalTimelineElement key={idx}
-                        className="text-wrap"
-                        contentStyle={{background:"#DBD7D2",color:"black",borderRadius:'10px',padding:"auto", boxShadow:"none", borderBottom:`4px solid ${exp["b-color"]}`}}
+                        className="max-w-full"
+                        contentStyle={{background:"#DBD7D2",color:"black",borderRadius:'10px',maxWidth:'80%',padding:"auto", boxShadow:"none", borderBottom:`4px solid ${exp["b-color"]}`}}
                         contentArrowStyle={{borderRight:"10px solid yellow"}}
                         icon={
                             <div className="w-full h-full flex items-center justify-center overflow-clip p-[10px]">
