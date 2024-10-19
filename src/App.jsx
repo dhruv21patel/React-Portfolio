@@ -16,10 +16,10 @@ function App() {
   return (
     <>
       <BrowserRouter>
-        <div  className="h-[100dvh] flex flex-col">
+        <div  className="h-[100svh] flex flex-col">
           <Navigation ref={topRe} />
           <ScrollToTop link={topRe}/>
-          <div className="flex-grow h-fit overflow-y-scroll ">
+          <div className="flex-grow h-auto overflow-y-scroll ">
             <Routes />
           </div>
         </div>

@@ -41,7 +41,7 @@ export default function Intro() {
 
   return (
     <motion.div
-      className=" text-white h-fit flex flex-col flex-grow"
+      className=" text-white h-fit lg:h-full  flex flex-col flex-grow items-center"
       // variants={introanimation}
       // initial={"initial"}
       // whileInView={setanimatedornot?{
