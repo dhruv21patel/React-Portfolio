@@ -31,12 +31,12 @@ export default function Contactus(params) {
   return (
     <div
       id="contact"
-      className="w-full h-full flex flex-col flex-grow items-center lg:flex-row mt-[15%] md:mt-0"
+      className="w-full h-full flex flex-col flex-grow justify-around items-center lg:flex-row  md:mt-0"
     >
-      <div className="w-full md:w-full lg:w-[50%] px-[5%]  text-white flex items-center ">
+      <div className="w-full h-fit md:h-full lg:w-[50%] px-[5%]  text-white flex items-center ">
         <div className="h-fit w-fit">
           <p
-            className="text-wrap text-[1.5em] md:text-[3rem]"
+            className="text-wrap text-[.5rem] sm:text-[1.5rem] md:text-[3rem]"
             style={{ fontFamily: "var(--handwritten2)" }}
           >
             {/* "This emphasizes the importance of problem-solving and understanding
@@ -49,19 +49,19 @@ export default function Contactus(params) {
         </div>
       </div>
 
-      <div className=" w-full lg:w-[50%] h-auto flex items-center justify-center">
+      <div className=" w-full lg:w-[50%] h-auto flex items-center justify-center ">
         {!submitted ? (
           <form
             onSubmit={handleSubmit(onSubmit)}
-            className=" w-[80%] h-auto p-8 flex flex-col items-center shadow"
+            className=" w-[80%] h-auto p-2 py-4 md:p-8 flex flex-col items-center shadow gap-[1rem]"
           >
-            <div className="mb-10 text-white text-[30px] w-full">
+            <div className=" text-white text-[.5rem] lg:text-[1.5rem] w-full">
               <input
                 placeholder="NAME"
                 id="name"
                 type="text"
                 {...register("name", { required: "Name is required" })}
-                className={`bg-transparent border-b border-white text-white placeholder-opacity-70 text-[20px] focus:outline-none focus:border-b focus:border-white  w-full p-2 ${
+                className={`bg-transparent border-b border-white text-white placeholder-opacity-70 text-[.5rem] lg:text-[1.5rem] focus:outline-none focus:border-b focus:border-white  w-full p-2 ${
                   errors.name ? "border-red-500" : ""
                 }`}
               />
@@ -70,11 +70,11 @@ export default function Contactus(params) {
               )}
             </div>
 
-            <div className="mb-10  text-white text-[30px] w-full">
+            <div className="  text-white text-[.5rem] lg:text-[1.5rem] w-full">
               <input
                 placeholder={
                   errors.email ? (
-                    <p className="text-red-500">{errors.email.message}</p>
+                    <p className="text-red-500 text-[.5rem] lg:text-[1.5rem]">{errors.email.message}</p>
                   ) : (
                     "EMAIL"
                   )
@@ -82,18 +82,18 @@ export default function Contactus(params) {
                 id="email"
                 type="email"
                 {...register("email", { required: "Email is required" })}
-                className={`bg-transparent border-b border-white text-white placeholder-opacity-70 text-[20px] focus:outline-none focus:border-b focus:border-white  w-full p-2 ${
+                className={`bg-transparent border-b border-white text-white placeholder-opacity-70 text-[.5rem] lg:text-[1.5rem] focus:outline-none focus:border-b focus:border-white  w-full p-2 ${
                   errors.email ? "border-red-500" : ""
                 }`}
               />
             </div>
 
-            <div className="mb-10  text-white text-[30px] w-full">
+            <div className="  text-white text-[.5rem] lg:text-[1.5rem] w-full">
               <select
                 placeholder="What do you want to Know"
                 id="subject"
                 {...register("subject", { required: "Subject is required" })}
-                className={`bg-transparent border-b border-white text-white placeholder-opacity-70 text-[20px] focus:outline-none focus:border-b focus:border-white  w-full p-2 ${
+                className={`bg-transparent border-b border-white text-white placeholder-opacity-70 text-[.5rem] lg:text-[1.5rem] focus:outline-none focus:border-b focus:border-white  w-full p-2 ${
                   errors.subject ? "border-red-500" : ""
                 }`}
               >
@@ -118,19 +118,19 @@ export default function Contactus(params) {
               )}
             </div>
 
-            <div className="mb-10  text-white text-[30px] w-full">
+            <div className="  text-white text-[.5rem] lg:text-[1.5rem] w-full">
               <textarea
                 placeholder="Define in Few Words"
                 id="message"
                 {...register("message")}
-                className="bg-transparent border-b border-white text-white placeholder-opacity-70 text-[20px] focus:outline-none  w-full p-2"
+                className="bg-transparent border-b border-white text-white placeholder-opacity-70 text-[.5rem] lg:text-[1.5rem] focus:outline-none  w-full p-2"
                 rows="4"
               />
             </div>
 
             <button
               type="submit"
-              className="bg-blue-500 text-white py-2 px-4 rounded hover:bg-blue-600 w-fit"
+              className="bg-blue-500 text-white py-2 px-4 rounded hover:bg-blue-600 text-[.5rem] lg:text-[1.5rem] w-fit"
             >
               Submit
             </button>

@@ -41,7 +41,7 @@ export default function Intro() {
 
   return (
     <motion.div
-      className=" text-white h-full flex flex-col flex-grow"
+      className=" text-white h-fit flex flex-col flex-grow"
       // variants={introanimation}
       // initial={"initial"}
       // whileInView={setanimatedornot?{
@@ -63,7 +63,7 @@ export default function Intro() {
         </div>
 
         <div className="pastinfo h-fit">
-          <p className=" text-[1.5rem] md:text-[2em] text-wrap indent-[20%]">
+          <p className=" text-[1rem] lg:text-[2em] text-wrap indent-[20%]">
             "As a master's student in Computer Science at{" "}
             <b className="underline decoration-green-400">CSULB</b>, I've honed
             my skills in full-stack web development through years of hands-on

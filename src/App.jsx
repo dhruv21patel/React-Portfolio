@@ -17,7 +17,6 @@ function App() {
         <div className="h-screen flex flex-col">
           <Navigation />
           <div className="flex-grow h-fit overflow-y-scroll ">
-            <ScrollToTop/>
             <Routes />
           </div>
         </div>

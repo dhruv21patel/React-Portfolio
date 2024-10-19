@@ -49,7 +49,7 @@ export default function Navigation({ load }) {
 
   return (
     <div
-      className=" static w-full h-fit py-[.5rem] flex"
+      className=" static w-full h-fit py-[.5rem] flex z-50"
       onMouseOver={mousein}
       onMouseOut={mouseout}
     >
