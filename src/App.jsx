@@ -16,7 +16,7 @@ function App() {
   return (
     <>
       <BrowserRouter>
-        <div  className="h-screen flex flex-col">
+        <div  className="h-[100dvh] flex flex-col">
           <Navigation ref={topRe} />
           <ScrollToTop link={topRe}/>
           <div className="flex-grow h-fit overflow-y-scroll ">

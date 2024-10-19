@@ -42,7 +42,6 @@
 body {
   background-color: black;
   animation: all 1s ease forwards;
-  overflow-y: scroll;
   position: relative;
   height: auto;
 }

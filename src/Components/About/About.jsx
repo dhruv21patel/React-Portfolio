@@ -9,13 +9,13 @@ export default function About(){
 
     const devwords = ["D","E","V","E","L","O","p","E","R"];
 
-    return <div id='about'  className=" bg-transparent h-[90dvh]  w-full flex justify-around flex-col ">
+    return <div id='about'  className=" bg-transparent h-[90svh]  w-full flex justify-around flex-col ">
 
                     {/* photo container that has full width */}
                     <div id='photocontainer' className=" w-full h-fit z-0 flex justify-end items-center overflow-hidden px-[2px] md:px-[20%]">
 
 
-                        <div className=' relative w-[70dvh] aspect-square overflow-hidden flex justify-center items-center'>
+                        <div className=' relative w-[70svh] aspect-square overflow-hidden flex justify-center items-center'>
                             
                 
                             {/* Profile Photo */}
