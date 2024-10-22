@@ -72,7 +72,7 @@ export default function ProjectProjectCard() {
             >
               {current_project.Technologies.map((tech, idx) => (
                 <li key={idx} className="text-[12px] lg:text-[20px] w-fit text-teal-300">
-                  {tech}
+                  {tech} ,
                 </li>
               ))}
             </ul>
