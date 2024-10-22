@@ -52,7 +52,7 @@ export default function ProjectProjectCard() {
 
       {/* project information details */}
       <div className="h-fit flex justify-center items-center">
-        <div className="flex flex-col gap-[3rem] justify-center items-center">
+        <div className="flex flex-col gap-[10px] justify-center items-center">
           <div className="container flex flex-col gap-[2rem]">
 
             <h1 className="text-[1.5rem] lg:text-[3rem] text-blue-200">OVERVIEW</h1>
@@ -71,7 +71,7 @@ export default function ProjectProjectCard() {
               style={{ fontFamily: "var(--primary)" }}
             >
               {current_project.Technologies.map((tech, idx) => (
-                <li key={idx} className="text-[.5rem] lg:text-[1.3rem] w-fit text-teal-300">
+                <li key={idx} className="text-[12px] lg:text-[20px] w-fit text-teal-300">
                   {tech}
                 </li>
               ))}
@@ -89,10 +89,10 @@ export default function ProjectProjectCard() {
               {current_project.Goals.map((goal, idx) => (
                 <li key={idx}>
                   {/* Add a unique key for each item */}
-                  <p className="font-bold text-[.5rem] lg:text-[1.3rem] text-blue-500">
+                  <p className="font-bold text-[12px] lg:text-[20px] text-blue-500">
                     {goal[0]}
                   </p>
-                  <p className="font-light indent-6 text-[.5rem] lg:text-[1.3rem]">
+                  <p className="font-light indent-6 text-[12px] lg:text-[20px]">
                     {goal[1]}
                   </p>
                 </li>
