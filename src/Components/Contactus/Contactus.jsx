@@ -36,7 +36,7 @@ export default function Contactus(params) {
       <div className="w-full h-fit md:h-full lg:w-[50%] px-[5%]  text-white flex items-center ">
         <div className="h-fit w-fit">
           <p
-            className="text-wrap  text-[1.5rem] md:text-[3rem]"
+            className="text-wrap  text-[16px] md:text-[28px] lg:text-[3rem]"
             style={{ fontFamily: "var(--handwritten2)" }}
           >
             {/* "This emphasizes the importance of problem-solving and understanding

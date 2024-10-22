@@ -73,7 +73,7 @@ export default function Navigation() {
                 delay: 0,
               },
             }}
-            className=" w-fit h-fit text-[1.7rem] border-2 md:px-6 md:py-2 px-4 py-2 rounded-full"
+            className=" w-fit h-fit text-[16px] lg:text-[1.7rem] border-2 md:px-6 md:py-2 px-4 py-2 rounded-full"
           >
             <Link
               to="/"
@@ -108,7 +108,7 @@ export default function Navigation() {
             src={slider ? close : menu}
             onClick={() => handleslider(event)}
             alt="menu"
-            className="contain w-10 h-10 z-50"
+            className="contain w-[20px] aspect-square z-50"
           />
           <div
             id="slider"

@@ -32,6 +32,8 @@ export default function Links({ setfunction, linkactive, devicesmall ,sliderisop
         </>
       );
     }
+
+
     return (
       <>
         {links.map((link) => {
@@ -47,7 +49,7 @@ export default function Links({ setfunction, linkactive, devicesmall ,sliderisop
               } hover:text-slate-300
                             transition ease-linear delay-150 z-[30] w-fit`}
             >
-              <Link to={`${link.link}`} className="  w-full h-full p-1 z-[40]">
+              <Link to={`${link.link}`} className="  w-full h-full p-1 z-[40] text-[12px] lg:text-[20px]">
                 {link.Title}
               </Link>
             </li>
@@ -60,7 +62,7 @@ export default function Links({ setfunction, linkactive, devicesmall ,sliderisop
 
   return devicesmall ? (
     <ul
-      className=" relative text-white flex flex-col gap-y-[10%] h-screen w-full text-xl z-20 py-[30%] px-10%]"
+      className=" relative text-white flex flex-col gap-y-[10%] h-screen w-full  z-20 py-[30%] px-10%]"
       onClick={(event) =>
         setfunction(event.target.closest("li").getAttribute("data-key"))
       }
@@ -70,7 +72,7 @@ export default function Links({ setfunction, linkactive, devicesmall ,sliderisop
     </ul>
   ) : (
     <ul
-      className=" text-white md:flex hidden flex-row xl:gap-x-[4rem] gap-x-4 justify-around w-fit h-fit items-center text-xl"
+      className=" text-white md:flex hidden flex-row xl:gap-x-[4rem] gap-x-4 justify-around w-fit h-fit items-center"
       onClick={(event) =>
         setfunction(event.target.closest("li").getAttribute("data-key"))
       }

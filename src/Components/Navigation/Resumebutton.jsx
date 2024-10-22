@@ -41,7 +41,7 @@ export default function Resumebutton(params) {
     };
 
     return<div ref={scope} className="h-fit w-fit">
-        <button ref={ref} className="relative rounded-full border-2 border-purple-600 px-6 py-2 text-purple-600 transition-colors hover:bg-pink-100" 
+        <button ref={ref} className="relative rounded-full border-2 border-purple-600 px-4 py-1 lg:px-6 lg:py-2 text-purple-600 transition-colors hover:bg-pink-100" 
             onMouseEnter={onhovered}
             onClick={onclickedbutton}>
 
@@ -50,7 +50,7 @@ export default function Resumebutton(params) {
                 {
                     ["R","E","S","U","M","E"].map((letter,index) =>{
                         return <span data-letter={letter} key={`${letter}-${index}`} 
-                            className="letter text-[25px] inline-block relative leading-8 h-8 after:h-8 after:absolute after:left-0 after:top-full after:content-[attr(data-letter)]">
+                            className="letter text-[18px] lg:text-[25px] inline-block relative leading-8 h-8 after:h-8 after:absolute after:left-0 after:top-full after:content-[attr(data-letter)]">
                                 {letter}</span>
                     })
                 }
