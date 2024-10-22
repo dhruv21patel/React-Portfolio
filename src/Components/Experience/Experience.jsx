@@ -27,7 +27,7 @@ export default function Experience(){
     }
   
   return (
-    <div id="work" className="flex flex-col gap-[4rem] w-full h-auto px-[0.5rem] ">
+    <div id="work" className="flex flex-col gap-[4rem] w-full h-auto p-[2rem] ">
         
         <motion.div className="w-full flex items-center "
             variants={customanimatedvariants}
@@ -38,7 +38,7 @@ export default function Experience(){
 
         </motion.div>
 
-        <VerticalTimeline lineColor="grey" className="w-full py-[2rem]">
+        <VerticalTimeline lineColor="grey" className="w-full ">
             {
                 exper.map((exp,idx)=>{
                     return (
@@ -52,9 +52,9 @@ export default function Experience(){
                             </div>
                         }
                         iconStyle={{background:'white'}}
-                        date={exp.date}
+                        
                         >
-                            <ExpCard key={idx} role={exp.role} company={exp.company} info={exp.description} tech={exp.Technologies}/>
+                            <ExpCard key={idx} duration={exp.date} role={exp.role} company={exp.company} info={exp.description} tech={exp.Technologies}/>
                         </VerticalTimelineElement>
                     )
                 })

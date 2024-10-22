@@ -31,7 +31,7 @@ export default function Contactus(params) {
   return (
     <div
       id="contact"
-      className="w-full h-full flex flex-col flex-grow justify-around items-center lg:flex-row py-[2vh]"
+      className="w-full h-full flex flex-col flex-grow justify-around gap-[2rem] items-center lg:flex-row py-[2vh]"
     >
       <div className="w-full h-fit md:h-full lg:w-[50%] px-[5%]  text-white flex items-center ">
         <div className="h-fit w-fit">
@@ -53,7 +53,7 @@ export default function Contactus(params) {
         {!submitted ? (
           <form
             onSubmit={handleSubmit(onSubmit)}
-            className=" w-[80%] h-auto p-2 py-4 md:p-8 flex flex-col items-center shadow gap-[1rem]"
+            className=" w-[80%] h-auto p-2 py-4 md:p-8 flex flex-col items-center shadow gap-[6vh]"
           >
             <div className=" text-white  w-full">
               <input
@@ -61,7 +61,7 @@ export default function Contactus(params) {
                 id="name"
                 type="text"
                 {...register("name", { required: "Name is required" })}
-                className={`bg-transparent border-b border-white text-white placeholder-opacity-70  focus:outline-none focus:border-b focus:border-white  w-full p-2 ${
+                className={`bg-transparent border-b border-white text-white placeholder-opacity-70 focus:outline-none focus:border-b focus:border-white  w-full p-2 ${
                   errors.name ? "border-red-500" : ""
                 }`}
               />

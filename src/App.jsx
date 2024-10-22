@@ -8,18 +8,18 @@ import "./Style.css";
 import Navigation from "./Components/Navigation/Navigation";
 import Routes from "./Routes/Routesall";
 import ScrollToTop from "./Routes/ScrollToTop";
+import { useScroll } from "framer-motion";
 
 
 function App() {
-  const topRe = useRef(null);
 
   return (
     <>
       <BrowserRouter>
         <div  className="h-[100svh] flex flex-col">
-          <Navigation ref={topRe} />
-          <ScrollToTop link={topRe}/>
-          <div className="flex-grow h-auto overflow-y-scroll ">
+          <Navigation />
+          <ScrollToTop />
+          <div  className="flex-grow h-auto overflow-y-scroll ">
             <Routes />
           </div>
         </div>

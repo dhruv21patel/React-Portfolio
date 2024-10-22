@@ -7,7 +7,7 @@ import Links from "./Links";
 import menu from "../../assets/sidebar.png";
 import close from "../../assets/delete.png";
 
-export default function Navigation({ load }) {
+export default function Navigation() {
   const [Active, setActive] = useState("Dhruv");
   const [slider, setSlider] = useState(false);
 
@@ -36,7 +36,6 @@ export default function Navigation({ load }) {
         }
       }
     }
-
   }
 
   function mouseout(event) {
@@ -44,12 +43,11 @@ export default function Navigation({ load }) {
 
     // Remove the active border class when mouse leaves the element
     target.classList.remove("hover-border");
-
   }
 
   return (
-    <div
-      className=" static w-full h-fit py-[.5rem] flex z-50"
+    <motion.div
+      className=" static w-full h-fit py-[.5rem] flex z-50 bg-transparent"
       onMouseOver={mousein}
       onMouseOut={mouseout}
     >
@@ -83,7 +81,7 @@ export default function Navigation({ load }) {
               className=""
               onClick={() => {
                 setActive("");
-                setSlider(()=>false);
+                setSlider(() => false);
                 window.scrollTo(0, 0);
               }}
             >
@@ -92,9 +90,7 @@ export default function Navigation({ load }) {
           </motion.div>
         </div>
 
-              
         {!slider ? (
-          
           <Links
             setfunction={setActive}
             linkactive={Active}
@@ -123,12 +119,12 @@ export default function Navigation({ load }) {
             <Links
               setfunction={setActive}
               linkactive={Active}
-              sliderisopen = {setSlider}
+              sliderisopen={setSlider}
               devicesmall={true}
             />
           </div>
         </div>
       </nav>
-    </div>
+    </motion.div>
   );
 }
