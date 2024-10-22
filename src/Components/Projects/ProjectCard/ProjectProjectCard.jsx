@@ -67,7 +67,7 @@ export default function ProjectProjectCard() {
               Technologies
             </h1>
             <ul
-              className="text-[1rem] lg:text-[2rem] w-full p-4 flex h-auto justify-evenly flex-wrap"
+              className="text-[1rem] lg:text-[2rem] w-full p-4 flex h-auto justify-evenly flex-wrap gap-[3px]"
               style={{ fontFamily: "var(--primary)" }}
             >
               {current_project.Technologies.map((tech, idx) => (
