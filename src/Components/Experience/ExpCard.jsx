@@ -12,7 +12,7 @@ export default function ExpCard({ role,duration, company, info, tech }) {
       <div className="container px-4">
       <ul className=" list-disc">
         {info.map((infomation, index) => (
-          <li key={`info-${index}`} className="px-[1rem] text-start w-auto text-[1vw]">
+          <li key={`info-${index}`} className="px-[1rem] text-start w-auto text-[12px] lg:text-[20px]">
             {infomation}
           </li>
         ))}
@@ -29,7 +29,7 @@ export default function ExpCard({ role,duration, company, info, tech }) {
             key={`point-${index}`}
             className="w-fit h-fit text-gray-700 flex justify-center items-center"
           >
-            <span className="text-[1vw]">{point}</span>
+            <span className="text-[12px] lg:text-[20px]">{point}</span>
           </li>
         ))}
       </ul>

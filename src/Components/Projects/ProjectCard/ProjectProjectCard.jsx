@@ -54,14 +54,12 @@ export default function ProjectProjectCard() {
       <div className="h-fit flex justify-center items-center">
         <div className="flex flex-col gap-[3rem] justify-center items-center">
           <div className="container flex flex-col gap-[2rem]">
+
             <h1 className="text-[1.5rem] lg:text-[3rem] text-blue-200">OVERVIEW</h1>
 
-            <p
-              className="text-[1rem] lg:text-[1.5rem] px-[4%]"
-              style={{ fontFamily: "var(--para)", fontWeight: "200" }}
-            >
-              {current_project.information}
-            </p>
+            <p className="text-[1rem] lg:text-[1.5rem] px-[4%]"
+              style={{ fontFamily: "var(--para)", fontWeight: "200" }}> { current_project.infromation } </p>
+
           </div>
 
           <div className="container lg:border-b-2 lg:border-b-white w-[100%] text-center  py-[1.5rem] px-[1rem] lg:p-[3rem] flex flex-col md:flex-row justify-between items-center">
