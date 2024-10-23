@@ -108,7 +108,7 @@ export default function Navigation() {
             src={slider ? close : menu}
             onClick={() => handleslider(event)}
             alt="menu"
-            className="contain w-[20px] aspect-square z-50"
+            className="contain w-[26px] aspect-square z-50"
           />
           <div
             id="slider"

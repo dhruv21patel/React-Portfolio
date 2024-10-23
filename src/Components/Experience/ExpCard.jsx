@@ -2,11 +2,11 @@ export default function ExpCard({ role,duration, company, info, tech }) {
   return (
     <div className="w-full h-fit flex flex-col gap-[1rem]">
       {/* Company name */}
-      <h1 className="font-semibold text-[5vw] md:text-[30px] max-w-full">{company}</h1>
+      <h1 className="font-semibold text-[18px] md:text-[30px] max-w-full" style={{fontFamily:"var(--primary)"}} >{company}</h1>
       <h2>{duration}</h2>
       
       {/* Role */}
-      <h3 className="text-[4vw] md:text-[20px] hover:text-black max-w-full" style={{fontFamily:"var(--oswald)"}}>{role}</h3>
+      <h3 className="text-[16px] md:text-[20px] hover:text-black max-w-full" style={{fontFamily:"var(--oswald)"}}>{role}</h3>
       
       {/* Information */}
       <div className="container px-4">
@@ -20,7 +20,7 @@ export default function ExpCard({ role,duration, company, info, tech }) {
       </div>
       
       {/* Technologies */}
-      <h2 className="text-[4vw] font-semibold" style={{fontFamily:"var(--oswald)"}}>Technologies</h2>
+      <h2 className="text-[14px] font-semibold" style={{fontFamily:"var(--oswald)"}}>Technologies</h2>
 
       <div className="container">
       <ul className="list-none px-5 flex flex-wrap gap-[.5rem]">

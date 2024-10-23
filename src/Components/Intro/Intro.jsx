@@ -59,11 +59,11 @@ export default function Intro() {
       <div className="relative h-full w-full flex flex-col p-[1.5rem] lg:px-[4rem] gap-[6vh] justify-center items-center">
 
         <div className="past h-fit">
-          <h1 className="text-[2rem] md:text-[5em] text-stone-500">FIND OUT MORE!</h1>
+          <h1 className="text-[38px] md:text-[5em] text-stone-500">FIND OUT MORE!</h1>
         </div>
 
         <div className="pastinfo h-fit">
-          <p className=" text-[1rem] lg:text-[2em] text-wrap text-balanceindent-[20%]">
+          <p className=" text-[24px] lg:text-[2rem] text-wrap text-balanceindent-[20%]">
             "As a master's student in Computer Science at{" "}
             <b className="underline decoration-green-400">CSULB</b>, I've honed
             my skills in full-stack web development through years of hands-on

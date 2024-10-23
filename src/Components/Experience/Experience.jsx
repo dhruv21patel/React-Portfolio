@@ -34,7 +34,7 @@ export default function Experience(){
             initial={customanimatedvariants.initial}
             whileInView={customanimatedvariants.animate}>
 
-            <p className="md:text-[6rem] text-[3rem] text-white w-full">Experience</p>
+            <p className="md:text-[6rem] text-[40px] text-white w-full">Experience</p>
 
         </motion.div>
 
