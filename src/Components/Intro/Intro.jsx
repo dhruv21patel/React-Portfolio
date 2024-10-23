@@ -63,7 +63,7 @@ export default function Intro() {
         </div>
 
         <div className="pastinfo h-fit">
-          <p className=" text-[24px] lg:text-[2rem] text-wrap text-balanceindent-[20%]">
+          <p className=" text-[20px] lg:text-[2rem] text-wrap text-balanceindent-[20%]">
             "As a master's student in Computer Science at{" "}
             <b className="underline decoration-green-400">CSULB</b>, I've honed
             my skills in full-stack web development through years of hands-on
