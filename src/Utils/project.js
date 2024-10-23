@@ -17,7 +17,7 @@ const projects = [
     {
       name: "GlamHub",
       backgroundImage: [`${bg1}`],
-      link: "https://example.com/project-one",
+      link: "https://github.com/dhruv21patel/django-salon-booking",
       infromation:"GlamHub is an all-in-one web platform for spa and salon services, built using Python Django. It offers users a seamless experience to discover and book appointments at nearby salons and spas through integrated location services. Salon owners can easily register and manage their listings through a dedicated admin panel, while the platform also supports job postings and applications for salon professionals. Additionally, GlamHub features an e-commerce shopping cart for purchasing beauty products, making it a comprehensive solution for both customers and salon owners.",
       Technologies:[
         "Modern Front-End Stack",
@@ -51,7 +51,7 @@ const projects = [
     {
       name: "ParkVision",
       backgroundImage: [`${bg2}`],
-      link: "https://example.com/project-two",
+      link: "https://github.com/dhruv21patel/parking-detection",
       infromation:"ParkVision is an innovative parking detection system developed using Python and OpenCV that intelligently analyzes video footage to identify available and occupied parking spots. This system enhances parking management efficiency, allowing users to find free spaces quickly and reducing the time spent searching for parking. By utilizing advanced computer vision techniques, ParkVision provides real-time insights into parking occupancy, helping both drivers and facility managers optimize their parking experience.",
       Technologies:[
         "Python",
@@ -75,7 +75,7 @@ const projects = [
     {
       name: "Talkative",
       backgroundImage: [`${bg3}`],
-      link: "https://example.com/project-three",
+      link: "https://github.com/VisheshMehta21/Talkative",
       infromation:"Talkative is a real-time chat application built using Spring Boot for the backend and React for the frontend. This application employs JWT (JSON Web Token) authentication to ensure secure user login and message transmission. Users can create accounts, join chat rooms, and engage in instant messaging with others. With a sleek and user-friendly interface, ChatWave enhances communication by allowing users to share messages, images, and files seamlessly, making conversations lively and engaging.",
       Technologies:[
         "Spring Boot",
@@ -99,7 +99,7 @@ const projects = [
     {
       name: "WeatherWise",
       backgroundImage: [`${bg4}`],
-      link: "https://example.com/project-four",
+      link: "https://github.com/dhruv21patel/weather-app-with-Tkinter-",
       infromation:"WeatherWise is a user-friendly desktop application built using Tkinter that allows users to check the current weather conditions for selected states. With a sleek and intuitive interface, users can easily input a state, and the application fetches real-time weather data from a reliable weather API. The app displays essential information such as temperature, humidity, wind speed, and weather conditions, helping users stay informed about the climate in their chosen location. This project showcases my ability to integrate APIs with a graphical user interface, providing a practical tool for everyday use.",
       Technologies:[
         "Python",
@@ -120,7 +120,7 @@ const projects = [
     {
       name: "Personal Portfolio",
       backgroundImage: [`${bg5}`],
-      link: "https://example.com/portfolio",
+      link: "https://github.com/dhruv21patel/React-Portfolio",
       information: "My Personal Portfolio showcases my skills and projects in web development, including various applications I've built using technologies like React, Django, and more. The portfolio is designed to reflect my personality and style while providing potential employers and collaborators with an overview of my work. It features interactive elements, smooth transitions, and a responsive layout that adapts to different screen sizes, ensuring a great user experience.",
       Technologies: [
         "React",

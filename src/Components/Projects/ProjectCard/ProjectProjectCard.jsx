@@ -1,8 +1,9 @@
 import { useEffect, useRef } from "react";
 import { useParams } from "react-router-dom";
-import { motion } from "framer-motion";
+import {  motion } from "framer-motion";
 import projects from "../../../Utils/project";
-import { div } from "framer-motion/client";
+import down from "../../../assets/right-down.png";
+
 
 export default function ProjectProjectCard() {
   const { id } = useParams();
@@ -52,7 +53,7 @@ export default function ProjectProjectCard() {
 
       {/* project information details */}
       <div className="h-fit flex justify-center items-center">
-        <div className="flex flex-col gap-[10px] justify-center items-center">
+        <div className="flex flex-col gap-[40px] justify-center items-center">
           <div className="container flex flex-col gap-[2rem]">
 
             <h1 className="text-[1.5rem] lg:text-[3rem] text-blue-200">OVERVIEW</h1>
@@ -99,6 +100,25 @@ export default function ProjectProjectCard() {
               ))}
             </ul>
           </div>
+
+          <motion.div
+          initial={{opacity:0}}
+          whileInView={{
+            opacity:1,
+            transition:{
+              delay:0.3,
+              duration:1
+            },   
+          }}
+          onClick={()=>{
+            window.location.href = current_project.link
+          }}
+          className="px-6 py-2 border-2 border-stone-40 rounded-full w-fit gap-[10px] justify-between flex mix-blend-difference cursor-pointer">
+            <span className="contianer text-center  text-[24px] lg:text-[36px]"> 
+            View Project </span>
+            <img src={down} alt="Arrow" className="w-[26px] lg:w-[56px] aspect-square object-contain"/>
+            
+          </motion.div>
         </div>
       </div>
 
