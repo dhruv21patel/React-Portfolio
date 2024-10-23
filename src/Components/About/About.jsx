@@ -23,7 +23,7 @@ export default function About(){
                                 <div className='rounded-full w-full h-full overflow-hidden flex justify-center items-center '>
                                      <motion.img
                                         src={profile}
-                                        className='object-cover h-full w-full'
+                                        className='pointer-events-none object-cover h-full w-full'
                                         initial={{
                                             opacity: 0,
                                             scale:0
@@ -45,7 +45,7 @@ export default function About(){
                              <motion.img
                                 src={blob}
                                 alt='blob'
-                                className=' absolute z-20 h-[95%] w-[95%] aspect-square lg:h-[100%] lg:w-[100%] bg-black object-contain'
+                                className=' pointer-events-none absolute z-20 h-[95%] w-[95%] aspect-square lg:h-[100%] lg:w-[100%] bg-black object-contain'
                                 initial={{
                                     opacity: 0,
                                     scale: 0,

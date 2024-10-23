@@ -50,7 +50,7 @@ export default function Resumebutton(params) {
                 {
                     ["R","E","S","U","M","E"].map((letter,index) =>{
                         return <span data-letter={letter} key={`${letter}-${index}`} 
-                            className="letter text-[18px] lg:text-[25px] inline-block relative leading-8 h-8 after:h-8 after:absolute after:left-0 after:top-full after:content-[attr(data-letter)]">
+                            className="letter text-[20px] lg:text-[25px] inline-block relative leading-8 h-8 after:h-8 after:absolute after:left-0 after:top-full after:content-[attr(data-letter)]">
                                 {letter}</span>
                     })
                 }
