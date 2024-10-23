@@ -1,6 +1,6 @@
 import { useEffect, useState } from "react";
 import React, { useRef } from "react";
-import { Link } from "react-router-dom";
+import { Link, useLocation } from "react-router-dom";
 import { motion } from "framer-motion";
 import "./navigation.css";
 import Links from "./Links";
@@ -8,6 +8,15 @@ import menu from "../../assets/sidebar.png";
 import close from "../../assets/delete.png";
 
 export default function Navigation() {
+
+  const {pathname} = useLocation();
+
+  useEffect(()=>{
+      // console.log(pathname.split("/")[1].toUpperCase());
+      setActive(()=>pathname.split("/")[1].toUpperCase());
+  },[pathname]);
+
+
   const [Active, setActive] = useState("Dhruv");
   const [slider, setSlider] = useState(false);
 
@@ -26,23 +35,26 @@ export default function Navigation() {
   function mousein(event) {
     let target = "";
 
-    if (event.target.tagName == "A") {
-      target = event.target;
-
-      if (event.target.id !== "Name") {
-        if (!target?.classList.contains("hover-border")) {
-          target.classList.add("hover-border");
-          //  circle[0].style.borderColor= 'transparent';
+    if(!slider)
+      {
+        if (event.target.tagName == "A") {
+          target = event.target;
+    
+          if (event.target.id !== "Name") {
+            if (!target?.classList.contains("hover-border")) {
+              target.classList.add("hover-border");
+              //  circle[0].style.borderColor= 'transparent';
+            }
+          }
         }
       }
-    }
   }
 
   function mouseout(event) {
     const target = event.target;
 
     // Remove the active border class when mouse leaves the element
-    target.classList.remove("hover-border");
+    if(!slider) target.classList.remove("hover-border");
   }
 
   return (
