@@ -42,7 +42,7 @@ export default function Navigation() {
     
           if (event.target.id !== "Name") {
             if (!target?.classList.contains("hover-border")) {
-              target.classList.add("hover-border");
+              target.classList.add("lg:hover-border");
               //  circle[0].style.borderColor= 'transparent';
             }
           }
@@ -54,7 +54,7 @@ export default function Navigation() {
     const target = event.target;
 
     // Remove the active border class when mouse leaves the element
-    if(!slider) target.classList.remove("hover-border");
+    if(!slider) target.classList.remove("lg:hover-border");
   }
 
   return (
