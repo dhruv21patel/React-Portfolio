@@ -62,7 +62,7 @@ export default function Links({ setfunction, linkactive, devicesmall ,sliderisop
 
   return devicesmall ? (
     <ul
-      className=" relative text-white flex flex-col gap-y-[10%] h-screen w-full  z-20 py-[30%] px-10%]"
+      className=" relative text-white flex flex-col gap-y-[2rem] h-screen w-full  z-20 py-[30%] px-10%]"
       onClick={(event) =>
         setfunction(event.target.closest("li").getAttribute("data-key"))
       }
