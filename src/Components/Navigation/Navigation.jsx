@@ -59,7 +59,7 @@ export default function Navigation() {
 
   return (
     <motion.div
-      className=" static w-full h-fit py-[.5rem] flex z-50 bg-transparent"
+      className=" static w-full h-fit py-[2vw] lg:py-[1vw] flex z-50 bg-transparent "
       onMouseOver={mousein}
       onMouseOut={mouseout}
     >

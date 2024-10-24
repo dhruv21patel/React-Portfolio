@@ -27,7 +27,7 @@ export default function Projectcard({ishovered,currenthoveredindex,id,name,link}
             letterSpacing: "0em",
         },
         animate:{
-            scale:1.5,
+            scale:1.2,
             color:'white',
             z:20,
             letterSpacing: "0.1em",
