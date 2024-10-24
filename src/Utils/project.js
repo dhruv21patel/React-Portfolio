@@ -6,10 +6,7 @@ import bg5 from "../assets/portfolio.png"
 import bg5_1 from "../assets/portfolio-contact.png"
 import bg5_2 from "../assets/portfolio-project.png"
 import bg5_3 from "../assets/portfolio-work.png"
-
-import image2 from "../assets/5542924.jpg";
-import image3 from "../assets/6492518.jpg";
-import image4 from "../assets/9403184.jpg";
+import cicd from "../assets/CICDBlog.jpg"
 
 
 
@@ -138,6 +135,26 @@ const projects = [
         ["Enhance user experience", "Create a visually appealing and user-friendly interface that engages visitors."]
       ],
       images: [`${bg5_1}`, `${bg5_2}`, `${bg5_3}`]
+    },
+    {
+      name: "CI/CD Pipeline",
+      backgroundImage: [`${cicd}`],
+      link:"https://github.com/dhruv21patel/CI-CD-pipeline",
+      information: "This project demonstrates a fully automated CI/CD pipeline, integrating tools like GitHub Actions, Docker, and Maven for building, testing, and deploying Java applications. It showcases my proficiency in setting up and managing continuous integration and deployment workflows, ensuring code quality and streamlining the deployment process.",
+      Technologies: [
+        "java",
+        "Maven",
+        "YAML",
+        "GitHub Actions",
+        "Docker",
+      ],
+      Goals: [
+        ["Automate Builds", "Implement an efficient CI pipeline to automatically build and test code whenever changes are pushed."],
+        ["Streamline Deployment", "Establish a CD pipeline to deploy the application in a containerized environment, minimizing manual intervention."],
+        ["Ensure Code Quality", "Incorporate unit tests and code analysis during the build process to maintain high code quality throughout development."],
+        ["Enhance Workflow Efficiency", "Leverage tools like Docker and GitHub Actions to reduce deployment time by 30%, improving overall development efficiency."]
+      ],
+      images: []
     }
     
   ];
