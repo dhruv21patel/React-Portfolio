@@ -22,7 +22,7 @@ export default function Exp(params) {
     }
 
   return (
-    <div className="min-h-screen flex flex-col items-center justify-around">
+    <div className="min-h-screen flex flex-col items-center justify-around gap-4">
         <motion.div className="w-full flex items-center "
             variants={customanimatedvariants}
             initial={customanimatedvariants.initial}
