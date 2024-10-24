@@ -11,10 +11,11 @@ export default function Expcardnew({ exp }) {
   return (
     <motion.div
       className={`relative transition-all duration-500 ease-in-out
-        ${isExpanded?" w-[80vw]":" w-[80vw] lg:w-[30vw]"} bg-white p-[5px] flex lg:flex-row flex-col justify-between items-center h-fit gap-4 over`}
+        ${isExpanded?" w-[80vw]":" w-[80vw] lg:w-[30vw]"} bg-white p-[5px] rounded-xl flex lg:flex-row flex-col justify-between items-center h-fit gap-4 over`}
     >
+      
       <div
-        className={`flex flex-col ${isExpanded?" w-[100%]  lg:w-[40%] shadow-lg shadow-black":"w-[100%]"} aspect-square  rounded-xl  `}
+        className={`flex flex-col ${isExpanded?" w-[100%]  lg:w-[40%] shadow-[15px_15px_15px_-15px_rgba(0,0,0,0.3)] shadow-black":"w-[100%]"} aspect-square  rounded-xl `}
       >
         <div className="rounded-xl h-[75%] text-black flex flex-start items-center" style={{backgroundColor:exp.bcolor}}>
           <div
@@ -50,6 +51,7 @@ export default function Expcardnew({ exp }) {
           </button>
         </div>
       </div>
+      
 
       {/* Conditionally render additional content when expanded */}
       {isExpanded && (
