@@ -113,8 +113,8 @@ export default function ProjectProjectCard() {
           onClick={()=>{
             window.location.href = current_project.link
           }}
-          className="px-6 py-2 border-2 border-stone-40 rounded-full w-fit gap-[10px] justify-between flex mix-blend-difference cursor-pointer">
-            <span className="contianer text-center  text-[24px] lg:text-[36px]"> 
+          className="px-6 py-2 border-2 border-stone-40 rounded-full w-fit gap-[10px] justify-between flex mix-blend-difference cursor-pointer  hover:border-blue-300 hover:text-blue-300">
+            <span className="contianer text-center  text-[18px] lg:text-[30px] "> 
             View Project </span>
             <img src={down} alt="Arrow" className="w-[26px] lg:w-[56px] aspect-square object-contain"/>
             
@@ -124,7 +124,7 @@ export default function ProjectProjectCard() {
 
       <div className="w-full h-auto flex justify-center">
         <div className="container flex flex-col lg:flex-row flex-wrap items-center justify-center gap-[1rem] h-fit">
-          {current_project.images.map((img, idx) => {
+          {current_project.images?.map((img, idx) => {
             return (
               <div
                 key={idx}

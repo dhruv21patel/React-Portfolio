@@ -46,7 +46,7 @@ const projects = [
           "Integrate a shopping cart for salon products and services, making it easier for customers to purchase beauty products or additional services online while maintaining secure transactions."
         ]
       ],
-      images:[`${bg1}`,`${image2}`,`${image3}`]
+      images:[]
     },
     {
       name: "ParkVision",
@@ -70,7 +70,7 @@ const projects = [
         ["Reduce search time for parking", "Minimize the frustration of drivers by reducing the time spent searching for available spots."],
         ["Enhance user experience", "Provide a user-friendly interface for drivers to quickly find parking spots using real-time detection."]
       ],
-      images:[`${bg1}`,`${image2}`,`${image3}`]
+      images:[]
     },
     {
       name: "Talkative",
@@ -94,7 +94,7 @@ const projects = [
         ["Enable real-time messaging", "Allow users to send and receive messages instantly, enhancing the chat experience."],
         ["Create a user-friendly interface", "Design an intuitive and responsive UI that facilitates easy navigation and interaction."]
       ],
-      images:[`${bg1}`,`${image2}`,`${image3}`]
+      images:[]
     },
     {
       name: "WeatherWise",
@@ -115,7 +115,7 @@ const projects = [
         ["User-friendly interface", "Design an intuitive and easy-to-navigate interface for seamless user experience."],
         ["Integrate external APIs", "Demonstrate skills in fetching and displaying data from external weather APIs."]
       ],
-      images:[`${bg1}`,`${image2}`,`${image3}`]
+      images:[]
     },
     {
       name: "Personal Portfolio",
