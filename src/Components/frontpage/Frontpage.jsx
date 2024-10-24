@@ -1,7 +1,7 @@
 import About from "../About/About";
 import Contactus from "../Contactus/Contactus";
 import Intro from "../Intro/Intro";
-import Experience from "../Experience/Experience";
+import Experience from "../Experience/Exp";
 import Terms from "../Terms/Terms";
 import Projects from "../Projects/Projects";
 

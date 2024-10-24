@@ -22,12 +22,12 @@ let exper = [
       "Redis",
     ],
     logo: "https://upload.wikimedia.org/wikipedia/commons/5/51/Facebook_f_logo_%282019%29.svg",
-    "b-color": "blue",
+    bcolor: "#fadadd",
   },
   {
     date: "Dec 2020 - Dec 2021",
     company: "Unnati Informatics LLP",
-    role: "Software Engineer - QA Tester",
+    role: "QA Tester",
     description: [
       "Conducted comprehensive testing of web applications developed with React, Node.js, and MongoDB to ensure functionality and performance.",
       "Collaborated with cross-functional teams to validate cloud-based microservices implemented on AWS, ensuring quality and compliance with requirements.",
@@ -46,7 +46,7 @@ let exper = [
       "TestNG",
       "JIRA",
     ],
-    "b-color": "green",
+    bcolor: "#fbceb1",
   },
   {
     date: "January 2021 - dec 2021",
@@ -70,7 +70,7 @@ let exper = [
       "Redis",
     ],
     logo: "https://upload.wikimedia.org/wikipedia/commons/8/81/LinkedIn_icon.svg",
-    "b-color": "red",
+    bcolor: "#b9f2ff",
   },
 ];
 
