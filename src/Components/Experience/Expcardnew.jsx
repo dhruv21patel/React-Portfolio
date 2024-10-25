@@ -55,7 +55,7 @@ export default function Expcardnew({ exp }) {
 
       {/* Conditionally render additional content when expanded */}
       {isExpanded && (
-        <div className={`bg-gray-100  rounded-xl shadow-lg ${isExpanded?" h-auto":"h-auto"} w-auto lg:w-[60%]  flex items-center justify-center p-4`}>
+        <div className={`bg-white  rounded-xl shadow-lg ${isExpanded?" h-auto":"h-auto"} w-auto lg:w-[60%]  flex items-center justify-center p-4`}>
           <div className="h-fit w-auto flex flex-col gap-4 text-black ">
             <div className="container w-full gap-[1em]">
               <h1 className="h-fit text-[1.6em]">Responsibility</h1>
