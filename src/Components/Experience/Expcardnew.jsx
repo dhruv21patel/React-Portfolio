@@ -1,16 +1,24 @@
 import { useRef, useState } from "react";
-import { motion } from "framer-motion";
+import { easeInOut, motion } from "framer-motion";
 
 export default function Expcardnew({ exp }) {
-  const [isExpanded, setIsExpanded] = useState(false); // Track whether the card is expanded
+  const [isExpanded, setIsExpanded] = useState(false);
+  // const cardref = useRef() // Track whether the card is expanded
 
-  const handleslider = () => {
-    setIsExpanded(!isExpanded); // Toggle the expanded state
+  const handleslider = (event) => {
+    setIsExpanded(!isExpanded);
+// Toggle the expanded state
   };
 
   return (
-    <motion.div
-      className={`relative transition-all duration-500 ease-in-out
+    <motion.div 
+    whileInView={{
+      transition:{
+        type:"easeInOut",
+        duration:5
+      }
+    }}
+      className={`relative  ease-in-out
         ${isExpanded?" w-[80vw]":" w-[80vw] lg:w-[30vw]"} bg-white p-[5px] rounded-xl flex lg:flex-row flex-col justify-between items-center h-fit gap-4 over`}
     >
       
@@ -45,7 +53,7 @@ export default function Expcardnew({ exp }) {
 
           <button
             className="bg-black text-white py-[2%] px-[4%] rounded-full w-fit h-fit"
-            onClick={handleslider}
+            onClick={()=>handleslider(event)}
           >
             {isExpanded ? "Close" : "View"} {/* Toggle button text */}
           </button>
@@ -56,7 +64,8 @@ export default function Expcardnew({ exp }) {
       {/* Conditionally render additional content when expanded */}
       {isExpanded && (
         <div className={`bg-white  rounded-xl shadow-lg ${isExpanded?" h-auto":"h-auto"} w-auto lg:w-[60%]  flex items-center justify-center p-4`}>
-          <div className="h-fit w-auto flex flex-col gap-4 text-black ">
+          <div className="h-fit w-auto flex flex-col gap-4 text-black px-4">
+           
             <div className="container w-full gap-[1em]">
               <h1 className="h-fit text-[1.6em]">Responsibility</h1>
               <ul className=" list-disc">
@@ -70,6 +79,7 @@ export default function Expcardnew({ exp }) {
                 ))}
               </ul>
             </div>
+
             <div className="container w-auto px-4 flex flex-col gap-4">
               <h1 className="h-fit text-[1.5em]">Technologies</h1>
               <ul className=" list-none flex flex-wrap ">
@@ -83,6 +93,7 @@ export default function Expcardnew({ exp }) {
                 ))}
               </ul>
             </div>
+          
           </div>
         </div>
       )}

@@ -32,7 +32,7 @@ export default function Exp(params) {
 
         </motion.div>
 
-      <div className="h-fit w-full flex flex-col lg:flex-row justify-evenly items-center flex-grow flex-wrap gap-[3vw]">
+      <div className="max-h-fit w-full flex flex-col lg:flex-row justify-around items-center flex-grow flex-wrap gap-[3vw]">
         {exper.map((expr,index) => <Expcardnew key={index} exp={expr}/>)}
       </div>
     </div>
